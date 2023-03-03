@@ -1,0 +1,15 @@
+if not vim.g.vscode then
+  pcall(require, "impatient")
+  require("options")
+  require("plugins/pack")
+  require("plugins/telescope")
+  require("plugins/comp")
+  require("lsp")
+  require("plugins/null")
+  require("plugins/nvim_tree")
+  require("plugins/whichkey")
+  require("plugins/statusline")
+  require("plugins/autopairs")
+  require("plugins/treesitter")
+  vim.cmd("colorscheme dracula")
+end
